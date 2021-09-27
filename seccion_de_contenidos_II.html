@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Conjunto de caracteres ( usamos set de caracteres latinos ) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion de Contenido</title> <!-- Aca se muestra el nombre de la pagina  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <!-- 
+        section: Es un contenedor generico que agrupa contenido que esta relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+        
+        article: Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendria sentido por si mimo.
+
+        aside: Se utiliza para representar contenido relacionado pero que no forma parte del contenido principal
+
+        Anidamiento: 
+            Un section puede contener articles, por ejemplo, si tenemos varios articulos que hablan sobre etiquetas HTML, deben ir dentro de la section, ya que es contenido relacionado entre si, y los article serian contenidos independientes porque podriamos leer uno sin haber leido el resto, y seguiria teniendo sentido.
+            El article es definido como un componente de la pagina de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+            
+            Tambien existe el caso en el que un article contenga varias secciones, el articulo independiente podria ser navegadores y este contener dentro secciones como navegadores mas utilizados en 2020 
+     -->
+
+
+<body>  
+    <header>
+        <h1>NOTICIAS NACIONALES</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Noticias del dia</h2>
+            <article>
+                <header> 
+                <h3>Noticia 1</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum eligendi autem nihil natus nobis, numquam reprehenderit quam aspernatur non ad dolores quasi, minima porro quaerat corrupti excepturi error laudantium!</p>
+                <footer>La noticia 1 ocurrio en Lima</footer>
+            </article>
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum eligendi autem nihil natus nobis, numquam reprehenderit quam aspernatur non ad dolores quasi, minima porro quaerat corrupti excepturi error laudantium!</p>
+            </article>
+            <article>
+                <h3>Noticia 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum eligendi autem nihil natus nobis, numquam reprehenderit quam aspernatur non ad dolores quasi, minima porro quaerat corrupti excepturi error laudantium!</p>
+            </article>
+        </section>
+    </main>
+    <footer>26-09-2021</footer>
+        
+</body>
+
+</html>
